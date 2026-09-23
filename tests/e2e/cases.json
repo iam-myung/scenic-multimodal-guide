@@ -1,0 +1,40 @@
+[
+  {
+    "id": "T1",
+    "query": "一日票提前多久可以免费修改入园日期？需要什么条件？",
+    "expected_sources_any_of": [
+      "knowledge_base/1-某大型游乐园门票规则.docx"
+    ],
+    "expected_image_path": null,
+    "expected_video_id": null,
+    "require_image_ref": false,
+    "require_video_ref": false
+  },
+  {
+    "id": "T2",
+    "query": "最近万圣节的活动海报是什么",
+    "expected_sources_any_of": [],
+    "expected_image_path": "knowledge_base/images/2-万圣节.jpeg",
+    "expected_video_id": null,
+    "require_image_ref": true,
+    "require_video_ref": false
+  },
+  {
+    "id": "T3",
+    "query": "有没有景区相关的演示视频可以看一下",
+    "expected_sources_any_of": [],
+    "expected_image_path": null,
+    "expected_video_id": "scenic_demo_1",
+    "require_image_ref": false,
+    "require_video_ref": true
+  },
+  {
+    "id": "T4",
+    "query": "园区合影的海报",
+    "expected_sources_any_of": [],
+    "expected_image_path": "knowledge_base/images/1-园区合影.jpg",
+    "expected_video_id": null,
+    "require_image_ref": true,
+    "require_video_ref": false
+  }
+]

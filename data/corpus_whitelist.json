@@ -1,0 +1,51 @@
+[
+  {
+    "path": "knowledge_base/1-某大型游乐园门票规则.docx",
+    "modality": "text",
+    "source_origin": "portfolio_fiction_demo",
+    "authorization": "owner_original",
+    "notes": "作品集虚构演示语料（某大型游乐园）；非真实乐园官方政策"
+  },
+  {
+    "path": "knowledge_base/2-某大型游乐园老人票价规定.docx",
+    "modality": "text",
+    "source_origin": "portfolio_fiction_demo",
+    "authorization": "owner_original",
+    "notes": "作品集虚构演示语料（某大型游乐园）；非真实乐园官方政策"
+  },
+  {
+    "path": "knowledge_base/3-某大型游乐园游玩攻略清单.docx",
+    "modality": "text",
+    "source_origin": "portfolio_fiction_demo",
+    "authorization": "owner_original",
+    "notes": "作品集虚构演示语料（某大型游乐园）；非真实乐园官方政策"
+  },
+  {
+    "path": "knowledge_base/4-某大型游乐园酒店会员制度.docx",
+    "modality": "text",
+    "source_origin": "portfolio_fiction_demo",
+    "authorization": "owner_original",
+    "notes": "作品集虚构演示语料（某大型游乐园）；非真实乐园官方政策"
+  },
+  {
+    "path": "knowledge_base/images/1-园区合影.jpg",
+    "modality": "image",
+    "source_origin": "portfolio_fiction_demo",
+    "authorization": "owner_original",
+    "notes": "自绘占位海报；虚构演示素材"
+  },
+  {
+    "path": "knowledge_base/images/2-万圣节.jpeg",
+    "modality": "image",
+    "source_origin": "portfolio_fiction_demo",
+    "authorization": "owner_original",
+    "notes": "自绘占位海报；万圣节主题为通用节日名，非特定品牌 IP"
+  },
+  {
+    "path": "video_sources.json",
+    "modality": "video_ref",
+    "source_origin": "portfolio_fiction_demo",
+    "authorization": "owner_original",
+    "notes": "禁止 car.mp4；占位 URL 可用 SCENIC_DEMO_VIDEO_URL 覆盖为合规公网视频"
+  }
+]

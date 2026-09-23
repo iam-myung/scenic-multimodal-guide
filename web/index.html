@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>景区多模态智能讲解助手 · 本地演示</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="brand">景区多模态智能讲解助手</div>
+    <p class="nav-note">本机演示 · 仅限 127.0.0.1</p>
+  </header>
+  <p id="fileProtocolBanner" class="file-banner" hidden>
+    当前为本地文件预览（仅 UI）。完整问答请用服务打开：
+    <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>
+  </p>
+  <div id="indexBanner" class="index-banner" hidden>
+    <div class="index-banner-text">
+      <strong id="indexBannerTitle">索引状态</strong>
+      <p id="indexBannerHint"></p>
+    </div>
+    <button type="button" id="buildBtn" class="btn-primary">一键建库</button>
+  </div>
+
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">文本 · 图片 · 视频 · 可追溯引用</p>
+      <h1>景区问答，先找证据再讲解</h1>
+      <p class="lede">
+        从受控知识库检索后再生成回答；出处、配图与视频均来自检索结果，不由模型正文「编造引用」。
+      </p>
+    </section>
+
+    <section class="ask-band" aria-label="提问">
+      <form id="askForm" class="ask-form">
+        <label class="field-label" for="queryInput">你的问题</label>
+        <p class="field-hint">可问票务规则、活动海报或演示视频；提交后将展示回答与检索来源。</p>
+        <textarea
+          id="queryInput"
+          name="query"
+          rows="3"
+          maxlength="800"
+          placeholder="例如：一日票提前多久可以免费修改入园日期？需要什么条件？"
+          required
+        ></textarea>
+        <div class="ask-actions">
+          <button type="submit" id="askBtn" class="btn-primary">开始讲解</button>
+          <button type="button" id="clearBtn" class="btn-secondary">清空内容</button>
+        </div>
+      </form>
+
+      <div class="chips" aria-label="试试这些问题">
+        <span class="chips-label">试试：</span>
+        <button type="button" class="chip" data-q="一日票提前多久可以免费修改入园日期？需要什么条件？">票务改期</button>
+        <button type="button" class="chip" data-q="万圣节海报长什么样？">活动海报</button>
+        <button type="button" class="chip" data-q="有没有景区演示视频可以看？">景区视频</button>
+      </div>
+    </section>
+
+    <section id="statusRow" class="status-row" hidden aria-live="polite">
+      <span class="pill pill-thinking" data-stage="thinking">准备中</span>
+      <span class="pill pill-read" data-stage="reading">检索中</span>
+      <span class="pill pill-done" data-stage="done">已完成</span>
+    </section>
+
+    <p id="errorBox" class="error-box" role="alert" hidden></p>
+
+    <section id="result" class="result" hidden>
+      <article class="pane answer-pane">
+        <h2 class="pane-title">讲解内容</h2>
+        <div id="answerText" class="answer-body"></div>
+      </article>
+
+      <article class="pane sources-pane">
+        <h2 class="pane-title">引用来源</h2>
+        <ol id="sourcesList" class="sources-list"></ol>
+      </article>
+
+      <div class="media-grid">
+        <article id="imagePane" class="pane media-pane" hidden>
+          <h2 class="pane-title">配图</h2>
+          <figure>
+            <img id="imageEl" alt="知识库检索到的配图" />
+            <figcaption id="imageCap" class="mono-cap"></figcaption>
+          </figure>
+        </article>
+        <article id="videoPane" class="pane media-pane" hidden>
+          <h2 class="pane-title">视频</h2>
+          <div id="videoWrap"></div>
+          <p id="videoCap" class="mono-cap"></p>
+        </article>
+      </div>
+    </section>
+
+    <p class="disclaimer">
+      内容仅基于本地演示知识库，不代表景区官方实时信息。作品集正式入口为命令行
+      <code>python -m src.cli</code>；接口密钥仅保存在服务端 <code>.env</code>，不会下发到浏览器。
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

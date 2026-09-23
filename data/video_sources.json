@@ -1,0 +1,7 @@
+[
+  {
+    "id": "scenic_demo_1",
+    "url": "https://example.com/placeholder/scenic-demo.mp4",
+    "description": "某大型游乐园演示视频（占位 URL；可用 SCENIC_DEMO_VIDEO_URL 覆盖为合规公网视频）"
+  }
+]

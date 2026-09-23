@@ -1,0 +1,30 @@
+# Secrets & local env
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+.cursor/
+.docs/
+项目讲解.html
+
+# Local model cache (contrast experiments)
+models/
+
+# Generated FAISS artifacts
+data/index/
+
+# Local run evidence / smoke outputs (keep testset.json tracked)
+data/experiment/h5_*.json
+data/experiment/h5_*.log
+data/smoke_10q.json
+data/e2e_last_run.log
+
+# Full extended corpus red line — do not commit if present locally
+**/迪士尼RAG知识库（完整）/
