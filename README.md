@@ -8,10 +8,12 @@
 
 约 1 分钟无旁白短片：提问 → 多模态入库 → 检索回答 → 来源可追溯。
 
-[![产品演示封面](assets/demo-poster.jpg)](assets/demo.mp4)
+[![产品演示封面](assets/demo-poster.jpg)](https://iam-myung.github.io/scenic-multimodal-guide/demo.html)
 
-点击封面播放，或直接打开 [`assets/demo.mp4`](assets/demo.mp4)（约 2MB / 1 分钟）。
+**[在线观看（GitHub Pages）](https://iam-myung.github.io/scenic-multimodal-guide/demo.html)** · 下载 [`assets/demo.mp4`](assets/demo.mp4)（约 8MB / 1 分钟）
 
+> 首次使用需在 GitHub 仓库 **Settings → Pages** 中：Source 选 `Deploy from a branch`，Branch 选 `main` / `/docs`，保存后等待 1～2 分钟再打开上方链接。
+>
 > 片源工程在 `demo-video/`（HyperFrames，默认不入库）；需要重渲时进入该目录执行 `npm run render`。
 
 ## 能力一览
