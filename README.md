@@ -4,6 +4,16 @@
 
 求职作品集：**无 Agent 编排**；主链路云端 Embedding（DashScope）+ LLM；对照实验（BGE-M3 / GTE-Qwen2）仅作 H5 证据，不写入主索引。
 
+## 产品演示
+
+约 1 分钟无旁白短片：提问 → 多模态入库 → 检索回答 → 来源可追溯。
+
+[![产品演示封面](assets/demo-poster.jpg)](assets/demo.mp4)
+
+点击封面播放，或直接打开 [`assets/demo.mp4`](assets/demo.mp4)（约 8MB / 1 分钟）。
+
+> 片源工程在 `demo-video/`（HyperFrames，默认不入库）；需要重渲时进入该目录执行 `npm run render`。
+
 ## 能力一览
 
 | 能力 | 说明 |
@@ -22,6 +32,7 @@
 ├── tests/               # unit · integration · e2e
 ├── data/                # 白名单语料、video_sources、experiment testset（索引 data/index/ 不入库）
 ├── web/                 # 本地演示静态页
+├── assets/              # 产品演示片（demo.mp4）
 ├── .docs/               # 本地工程文档（gitignore，不随仓库分发）
 ├── requirements.txt     # 主链路依赖
 ├── requirements-web.txt # 可选 Web

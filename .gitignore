@@ -28,3 +28,6 @@ data/e2e_last_run.log
 
 # Full extended corpus red line — do not commit if present locally
 **/迪士尼RAG知识库（完整）/
+
+# HyperFrames authoring (exported demo lives in assets/demo.mp4)
+demo-video/
