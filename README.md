@@ -10,7 +10,7 @@
 
 [![产品演示封面](assets/demo-poster.jpg)](assets/demo.mp4)
 
-点击封面播放，或直接打开 [`assets/demo.mp4`](assets/demo.mp4)（约 8MB / 1 分钟）。
+点击封面播放，或直接打开 [`assets/demo.mp4`](assets/demo.mp4)（约 2MB / 1 分钟）。
 
 > 片源工程在 `demo-video/`（HyperFrames，默认不入库）；需要重渲时进入该目录执行 `npm run render`。
 
